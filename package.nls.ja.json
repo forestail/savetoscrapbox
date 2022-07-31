@@ -1,0 +1,4 @@
+{
+    "savetoscrapbox.projects.description": "保存対象のScrapboxプロジェクト名を入力。複数ある場合はカンマ区切りで入力してください。",
+    "savetoscrapbox.footer.description": "保存したテキストの末尾に付与する共通文字列。リンクを設定しておくとVSCodeから転送したものを集約できます。"
+}

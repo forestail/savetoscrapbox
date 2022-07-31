@@ -1,0 +1,4 @@
+{
+    "savetoscrapbox.projects.description": "Enter the name of the Scrapbox project (the string in the project name portion of the URL) where you want to save the text. If there are multiple projects, enter them separated by commas (,).",
+    "savetoscrapbox.footer.description": "The common string to be given at the end of the saved text. A link format one is useful, for it will be able to consolidate copied contents from VSCode."
+}
