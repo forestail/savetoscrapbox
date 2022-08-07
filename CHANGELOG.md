@@ -1,9 +1,14 @@
 # Change Log
 
-All notable changes to the "savetoscrapbox" extension will be documented in this file.
+## [1.1.0] - 2022-08-07
+### Added
+- Add "Open" command to open the top page for each projects.
+- Add "New" command to create new page on selected project.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Changed
+- The "footer" section on settings allow multiline text.
+- If only one project is set in the "projects" section on settings (not contain ","), the project selection pull-down is not displayed.
 
-## [Unreleased]
 
+## [1.0.0] - 2022-08-01
 - Initial release
