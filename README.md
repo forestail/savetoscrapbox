@@ -1,23 +1,27 @@
 # SaveToScrapbox
 
 
-SaveToScrapbox is a VSCode extension to save the text you are editing on VSCode to Scrapbox.
+SaveToScrapbox is a VSCode extension to save the text you are editing on VSCode to Scrapbox (https://scrapbox.io/) .
 
 ## Features
 
-On the VSCode edit screen, select the text you wish to save to Scrapbox and execute the `SaveToScrapbox:Save` command.
-
-A list of projects to save to will be displayed on the command palette. Enter or select the name of the project you wish to save to.
-
+### Save selected or all text on VSCode to Scrapbox
+On the VSCode edit screen, select the text you wish to save to Scrapbox and execute the `SaveToScrapbox:Save` command. \
+And a list of projects to save to will be displayed on the command palette. Enter or select the name of the project you wish to save to. \
 Then the default browser will open the saved Scrapbox article, so please make additional edits if necessary.
 
 If you execute the above command without selecting anything on the editor, all text in the screen you are editing will be saved to Scrapbox.
+
 
 The key bindings for the above command are assigned to `Ctrl+Alt+S` (Windows) and `Cmd+Ctrl+S` (Mac) by default.
 
 ![SaveToScrapbox:Save](images/savetoscrapbox_save.gif)
 
+### Open Scrapbox project's top page
+To simply open the top page of each project in Scrapbox without saving the text, execute the command `SaveToScrapbox:Open`.
 
+### Create new page into Scrapbox project
+To create new page into Scrapbox project, execute the command `SaveToScrapbox:New`.
 
 ## Requirements
 
@@ -45,10 +49,6 @@ Run the `SaveToScrapbox:Config` command to display the settings screen for this 
 
 ## Release Notes
 
-
-### 1.0.0
-
-Initial release of SaveToScrapbox
-
+See [CHANGELOG.md](./CHANGELOG.md).
 
 

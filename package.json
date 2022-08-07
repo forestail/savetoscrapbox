@@ -3,7 +3,7 @@
   "license": "MIT License",
   "displayName": "SaveToScrapbox",
   "description": "Save text to your Scrapbox project.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "forestail",
   "engines": {
     "vscode": "^1.69.0"
@@ -18,7 +18,9 @@
   ],
   "activationEvents": [
     "onCommand:savetoscrapbox.save",
-    "onCommand:savetoscrapbox.config"
+    "onCommand:savetoscrapbox.config",
+    "onCommand:savetoscrapbox.open",
+    "onCommand:savetoscrapbox.new"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -30,6 +32,14 @@
       {
         "command": "savetoscrapbox.config",
         "title": "Save to Scrapbox:Config"
+      },
+      {
+        "command": "savetoscrapbox.open",
+        "title": "Save to Scrapbox:Open"
+      },
+      {
+        "command": "savetoscrapbox.new",
+        "title": "Save to Scrapbox:New"
       }
     ],
     "configuration": {
@@ -43,7 +53,8 @@
         "savetoscrapbox.footer": {
           "type": "string",
           "default": "[from VSCode]",
-          "description": "%savetoscrapbox.footer.description%"
+          "description": "%savetoscrapbox.footer.description%",
+          "editPresentation": "multilineText"
         }
       }
     },
