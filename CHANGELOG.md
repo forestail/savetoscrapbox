@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.2.0] - 2023-11-04
+### Fixed
+- Fixed a bug where the "Save" command would result in an error if the text being saved contained the characters "&", "%", or "#".
+
 ## [1.1.0] - 2022-08-07
 ### Added
 - Add "Open" command to open the top page for each projects.

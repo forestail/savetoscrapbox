@@ -48,12 +48,27 @@ export function activate(context: vscode.ExtensionContext) {
 					}
 	
 					if (text !== ''){
-						// const title = decodeURI(text.split('\n')[0]);
-						const title = text.split('\n')[0].trim();
-						const body = decodeURI(text.replace(/\r\n/g,'\n') + `\n${footer}`);
+
+						// var replaceAll = (str:string, before:string, after:string) => {
+						// 	var i = str.indexOf(before);
+						// 	if (i === -1) {return str;}
+						// 	var result = str.slice(0, i) + after;
+						// 	var j = str.indexOf(before, i+before.length);
+						// 	while (j !== -1) {
+						// 	  result += str.slice(i+before.length, j) + after;
+						// 	  i = j;
+						// 	  j = str.indexOf(before, i+before.length);
+						// 	}
+						// 	return result + str.slice(i+before.length);
+						//   };
+
+						// const title = encodeURI(text.split('\n')[0].trim()).replace(/#/g,'%23').replace(/&/g,'%26');
+						// const body = encodeURI(text.replace(/\r\n/g,'\n') + `\n${footer}`).replace(/#/g,'%23').replace(/&/g,'%26');
+						const title = encodeURI(text.split('\n')[0].trim()).replaceAll('#','%23').replaceAll('&','%26');
+						const body = encodeURI(text.replace(/\r\n/g,'\n') + `\n${footer}`).replaceAll('#','%23').replaceAll('&','%26');
 						//Save to Scrapbox
 						const scrapboxurl = `https://scrapbox.io/${result}/${title}?body=${body}`;
-						vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(scrapboxurl));
+						vscode.commands.executeCommand('vscode.open', scrapboxurl);
 					}else{
 						vscode.window.showInformationMessage('There is no text.');	
 					}
